@@ -51,7 +51,7 @@ describe("auth service", () => {
                 password: "123456"
             })
 
-            const calledWith = mockQuery.mock.calls[0][1] as string[]
+            const calledWith = mockQuery.mock.calls[0]?.[1] as string[]
             const storedPassword = calledWith[2]
             expect(storedPassword).not.toBe("123456")
             expect(storedPassword).toMatch(/^\$2[ab]\$/)

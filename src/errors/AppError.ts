@@ -8,7 +8,7 @@ export class AppError extends Error {
         this.code = code
 
         this.name = "AppError"
-
+        
     }
 }
 

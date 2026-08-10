@@ -2,3 +2,9 @@ node_modules/
 dist/
 .env
 .env.test
+
+.env.docker
+
+vitest.config.js
+vitest.config.d.ts
+vitest.config.d.js.map
